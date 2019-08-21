@@ -1,0 +1,28 @@
+.header{
+  background: $dark-blue;
+  color: white;
+}
+.header__title{
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  h1{
+    margin: 0;
+
+  }
+  line-height: 100px;
+
+}
+.header__content{
+  display: flex;
+  justify-content: space-between;
+  padding: $xs-size 0;
+  h5{
+    margin: 0 0 0 0;
+  }
+  line-height: 50px;
+}
+.header__content2{
+  text-align: center;
+
+}
