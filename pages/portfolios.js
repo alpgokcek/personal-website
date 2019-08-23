@@ -2,36 +2,45 @@ import React from 'react';
 import BaseLayout from "../components/layouts/BaseLayout"
 import axios from "axios";
 import Link from 'next/link'
+import BasePage from "../components/layouts/BasePage"
+import github from "../components/github-auth"
+import PortfolioBox from "../components/layouts/PortfolioBox";
+
 
 class Portfolios extends React.Component{
 
     static async getInitialProps(){
         let posts={};
         try {
-            const response = await axios.get('https://jsonplaceholder.typicode.com/posts');
-            posts=response.data;
+            //const response = await axios.get('https://jsonplaceholder.typicode.com/posts');
+            const response = await github.get('/users/alpgokcek/repos');
+            console.log("*************");
+            posts = response.data;
             //console.log(posts)
         }catch (e) {
-            console.log(e)
+            console.log(e);
         }
-
-        return {posts:posts.splice(0,10)}
+        return {posts}
     }
 
     renderPosts = (posts)=> {
         return posts.map((post)=>{
-            return <li key={post.id}><Link as={`/portfolio/${post.id}`} href="/portfolio/[id]"><a>{post.title}</a></Link></li>
+            return <PortfolioBox key={post.name} portfolio={post} description={post.description}/>
+
         })
     };
 
     render() {
         const posts = this.props.posts;
+        let i =0;
         return(
             <BaseLayout>
-                <h1>Portfolios</h1>
-                <ul>
-                    {this.renderPosts(posts)}
-                </ul>
+                <BasePage className="pb-margin">
+                    <h1>Portfolios</h1>
+                    <div className="pbox-container">
+                        {this.renderPosts(posts)}
+                    </div>
+                </BasePage>
             </BaseLayout>
         );
     }

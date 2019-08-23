@@ -1,0 +1,41 @@
+@font-face {
+  font-family:"Neo Sans";
+  src: url('/static/fonts/Neo_Sans_Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:"Neo Sans";
+  src: url('/static/fonts/Neo_Sans.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:"Neo Sans";
+  src: url('/static/fonts/Neo_Sans_Light.ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:"Neo Sans";
+  src: url('/static/fonts/Neo_Sans_Medium.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:"Neo Sans";
+  src: url('/static/fonts/Neo_Sans_Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family:"Neo Sans";
+  src: url('/static/fonts/Neo_Sans_Light_Italic.ttf');
+  font-weight: 300;
+  font-style: italic;
+}
