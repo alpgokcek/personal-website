@@ -42,8 +42,13 @@ class Portfolio extends React.Component {
                     <Container>
                         <Row>
                             <Col>
-                                <div className="pbox-container">
-                                    {this.renderPosts(posts)}
+                                <div className="flexbox-container">
+                                    <div>
+                                        {this.renderPosts(posts.slice(0, Math.floor(posts.length / 2)))}
+                                    </div>
+                                    <div>
+                                        {this.renderPosts(posts.slice(Math.floor(posts.length / 2)))}
+                                    </div>
                                 </div>
                             </Col>
                         </Row>

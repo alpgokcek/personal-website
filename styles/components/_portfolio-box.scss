@@ -34,4 +34,34 @@
 
 .pb-margin{
   margin-bottom: 150px;
+  @media (max-width: $desktop-breakpoint) {
+    margin-left: 10px;
+    margin-right: 40px;
+  }
+}
+
+.flexbox-container {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  @media (max-width: $desktop-breakpoint) {
+    flex-direction: column;
+    div{
+      width: 100% !important;
+      padding:10px;
+      align-content:center;
+      margin-left: 10px;
+      margin-right: 40px;
+    }
+  }
+}
+
+.flexbox-container > div {
+  width: 50%;
+  padding: 10px;
+
+}
+
+.flexbox-container > div:first-child {
+  margin-right: 20px;
 }
