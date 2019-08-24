@@ -43,8 +43,8 @@ export default class PortfolioBox extends React.Component {
         return (
             <div className="portfolio-box" onClick={this.handleToggle}>
                 <PortfolioBoxModal toggle={this.handleToggle} portfolio={this.props.portfolio} isOpen={isOpen}/>
-                <h3>{portfolio.name}</h3>
-                <h5>{portfolio.description}</h5>
+                <h4>{portfolio.name}</h4>
+                <p>{portfolio.description}</p>
             </div>
         );
     }

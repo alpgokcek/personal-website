@@ -17,7 +17,7 @@ class Homepage extends React.Component {
                         <img src="/static/images/background-index.png"/>
                     </div>
 
-                    <Container>
+                    <Container className="cv-page-margin">
                         <Row>
                             <Col md="6">
                                 <div className="hero-section">

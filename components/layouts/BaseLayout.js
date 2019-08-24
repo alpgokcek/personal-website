@@ -1,10 +1,12 @@
 import React from 'react';
 import Header from '../shared/Header'
 import Footer from '../shared/Footer'
+import {Head} from "next/document";
 
 const BaseLayout = (props) => {
     return(
         <div className="layout-container">
+
             <Header/>
             <main className={`cover ${props.className}`}>
                 <div className="wrapper">

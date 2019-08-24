@@ -1,5 +1,6 @@
 import React from 'react'
 import App, {Container} from 'next/app'
+import {Head} from 'next/document'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../styles/styles.scss'
 class MyApp extends App {

@@ -23,6 +23,7 @@ export default Header;
 
 import React from 'react';
 import Link from "next/link";
+import Head from 'next/head';
 
 
 import {
@@ -65,6 +66,9 @@ export default class Header extends React.Component {
     render() {
         return (
             <div>
+                <Head>
+                    <title>Alp Gökçek</title>
+                </Head>
                 <Navbar className="port-navbar port-nav-base absolute" color="transparent" dark expand="md">
                     <NavbarBrand className="port-navbar-brand" href="/">Alp Gökçek</NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
