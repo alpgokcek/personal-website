@@ -40,8 +40,6 @@ export default class PortfolioBox extends React.Component {
     render() {
         const { portfolio, children } = this.props;
         const { isOpen } = this.state;
-        //const {post, languages}=this.fetchPortfolio(portfolio.name);
-        //console.log(languages);
         return (
             <div className="portfolio-box" onClick={this.handleToggle}>
                 <PortfolioBoxModal toggle={this.handleToggle} portfolio={this.props.portfolio} isOpen={isOpen}/>

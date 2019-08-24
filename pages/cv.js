@@ -14,12 +14,12 @@ class CV extends React.Component {
                     <div className="background-image">
                         <img src="/static/images/background-index.png"/>
                     </div>
-                    <Container>
+                    <Container className="cv-page-margin">
                         <Row>
-                            <Col md="6">
+                            <Col>
                                 <img className="cv cv-page" src="../static/images/cv.jpg" width="500" height="648"/>
                             </Col>
-                            <Col md="6" className="hero-welcome-wrapper">
+                            <Col className="hero-welcome-wrapper">
                                 <div className="hero-welcome-text">
                                     <a className="nav-link white-link" href="../static/files/cv.pdf"><h1 className="cv-download">Click here to download my CV as PDF!</h1></a>
                                 </div>
@@ -33,8 +33,3 @@ class CV extends React.Component {
 }
 
 export default CV;
-
-/*
-\,\SubBulletSymbol\,
-+90\,(532)\,283-0012
- */

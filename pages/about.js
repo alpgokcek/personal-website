@@ -2,7 +2,7 @@ import React from 'react';
 import BaseLayout from "../components/layouts/BaseLayout"
 import BasePage from "../components/layouts/BasePage"
 import TreeView from "../components/TreeView"
-import {Button, Collapse, CardBody, Card, Progress} from 'reactstrap';
+import {Button, Collapse, CardBody, Card, Progress, Container, Row, Col} from 'reactstrap';
 
 let tree = [
     {
@@ -65,7 +65,7 @@ let tree = [
                 ]
 
             },
-            ]
+        ]
     },
     {
         text: "Languages",
@@ -102,28 +102,50 @@ class About extends React.Component {
                     <h1>About</h1>
                     <hr/>
                     <h3>Skills</h3>
-                    <div className="skills-wrapper">
-                        <div className="skills-container">
-                            <div className="text-md-center">Python</div>
-                            <Progress className="about-progress-bar" animated value={80}>%80</Progress>
-                            <div className="text-md-center">Java</div>
-                            <Progress className="about-progress-bar" className="about-progress-bar" animated
-                                      color="success" value="85">%85</Progress>
-                            <div className="text-md-center">C-Programming</div>
-                            <Progress className="about-progress-bar" animated color="info" value={50}>%50</Progress>
-                        </div>
-                        <div className="skills-container">
-                            <div className="text-md-center">C# for Unity</div>
-                            <Progress className="about-progress-bar" animated color="warning" value={60}>%60</Progress>
-                            <div className="text-md-center">Bash</div>
-                            <Progress className="about-progress-bar" animated color="danger" value={30}>%30</Progress>
-                            <div className="text-md-center">React</div>
-                            <Progress className="about-progress-bar" animated color="info" value={70}>%70</Progress>
-                        </div>
+                    <div className="background-image">
+                        <img src="/static/images/background-index.png"/>
                     </div>
-                    <div className="text-black-50">
-                        <TreeView tree={tree}/>
-                    </div>
+                    <Container>
+                        <Row>
+                            <Col>
+                                <div className="skills-wrapper">
+                                    <div className="skills-container">
+                                        <div className="text-md-center">Python</div>
+                                        <Progress className="about-progress-bar" animated value={80}>%80</Progress>
+                                        <div className="text-md-center">Java</div>
+                                        <Progress className="about-progress-bar" className="about-progress-bar" animated
+                                                  color="danger" value="85">%85</Progress>
+                                        <div className="text-md-center">C-Programming</div>
+                                        <Progress className="about-progress-bar" animated color="success"
+                                                  value={50}>%50</Progress>
+                                        <div className="text-md-center">HTML</div>
+                                        <Progress className="about-progress-bar" animated color="warning"
+                                                  value={95}>%95</Progress>
+                                    </div>
+                                    <div className="skills-container">
+                                        <div className="text-md-center">C# for Unity</div>
+                                        <Progress className="about-progress-bar" animated color="warning"
+                                                  value={60}>%60</Progress>
+                                        <div className="text-md-center">Bash</div>
+                                        <Progress className="about-progress-bar" animated color="success"
+                                                  value={30}>%30</Progress>
+                                        <div className="text-md-center">React</div>
+                                        <Progress className="about-progress-bar" animated color="info"
+                                                  value={70}>%70</Progress>
+                                        <div className="text-md-center">CSS</div>
+                                        <Progress className="about-progress-bar" animated color="danger"
+                                                  value={85}>%85</Progress>
+                                    </div>
+                                </div>
+                                <hr/>
+                                <h3>About me</h3>
+                                <div className="text-black-50 pt-4">
+                                    <TreeView tree={tree}/>
+                                </div>
+
+                            </Col>
+                        </Row>
+                    </Container>
 
 
                 </BasePage>

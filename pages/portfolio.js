@@ -5,26 +5,25 @@ import Link from 'next/link'
 import BasePage from "../components/layouts/BasePage"
 import github from "../components/github-auth"
 import PortfolioBox from "../components/layouts/PortfolioBox";
+import {Container, Row, Col} from "reactstrap";
 
 
-class Portfolios extends React.Component{
+class Portfolio extends React.Component {
 
-    static async getInitialProps(){
-        let posts={};
+    static async getInitialProps() {
+        let posts = {};
         try {
             //const response = await axios.get('https://jsonplaceholder.typicode.com/posts');
             const response = await github.get('/users/alpgokcek/repos');
-            console.log("*************");
             posts = response.data;
-            //console.log(posts)
-        }catch (e) {
+        } catch (e) {
             console.log(e);
         }
         return {posts}
     }
 
-    renderPosts = (posts)=> {
-        return posts.map((post)=>{
+    renderPosts = (posts) => {
+        return posts.map((post) => {
             return <PortfolioBox key={post.name} portfolio={post} description={post.description}/>
 
         })
@@ -32,18 +31,27 @@ class Portfolios extends React.Component{
 
     render() {
         const posts = this.props.posts;
-        let i =0;
-        return(
+        let i = 0;
+        return (
             <BaseLayout>
                 <BasePage className="pb-margin">
                     <h1>Portfolios</h1>
-                    <div className="pbox-container">
-                        {this.renderPosts(posts)}
+                    <div className="background-image">
+                        <img src="/static/images/background-index.png"/>
                     </div>
+                    <Container>
+                        <Row>
+                            <Col>
+                                <div className="pbox-container">
+                                    {this.renderPosts(posts)}
+                                </div>
+                            </Col>
+                        </Row>
+                    </Container>
                 </BasePage>
             </BaseLayout>
         );
     }
 }
 
-export default Portfolios;
+export default Portfolio;
