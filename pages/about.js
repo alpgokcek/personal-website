@@ -6,13 +6,27 @@ import {Button, Collapse, CardBody, Card, Progress, Container, Row, Col} from 'r
 
 let tree = [
     {
+        text: "Work Experience",
+        nodes: [
+            {
+                text: 'Doğuş Teknoloji: Software Developer Intern, August 2019 - Present'
+            },
+            {
+                text: 'MEF University: Computer Architecture Course Student Assistant, January 2020 - June 2020'
+            },
+            {
+                text: 'MEF University: Scientific Research Project Project Manager, January 2020 - Present'
+            }
+        ]
+    },
+    {
         text: "Education",
         nodes: [
             {
                 text: "College",
                 nodes: [
                     {
-                        text: 'MEF University, Istanbul,TR. BS in Computer Engineering, graduation expected in 2021.\n - CGPA:3.86'
+                        text: 'MEF University, Istanbul,TR. BS in Computer Engineering, graduation expected in 2021.\n - CGPA:3.89'
                     }
                 ]
             },
@@ -78,6 +92,9 @@ let tree = [
             },
             {
                 text: 'German: Basic (speaking, reading, writing)'
+            },
+            {
+                text: 'Spanish: Basic (speaking, reading, writing)'
             }
         ]
     }
@@ -111,16 +128,19 @@ class About extends React.Component {
                                 <div className="skills-wrapper">
                                     <div className="skills-container">
                                         <div className="text-md-center">Python</div>
-                                        <Progress className="about-progress-bar" animated value={80}>%80</Progress>
+                                        <Progress className="about-progress-bar" animated value={90}>%90</Progress>
                                         <div className="text-md-center">Java</div>
                                         <Progress className="about-progress-bar" className="about-progress-bar" animated
-                                                  color="danger" value="85">%85</Progress>
+                                                  color="danger" value={80}>%80</Progress>
                                         <div className="text-md-center">C-Programming</div>
                                         <Progress className="about-progress-bar" animated color="success"
-                                                  value={50}>%50</Progress>
+                                                  value={75}>%75</Progress>
                                         <div className="text-md-center">HTML</div>
                                         <Progress className="about-progress-bar" animated color="warning"
                                                   value={95}>%95</Progress>
+                                        <div className="text-md-center">Node.js</div>
+                                        <Progress className="about-progress-bar" animated color="info"
+                                                  value={85}>%85</Progress>
                                     </div>
                                     <div className="skills-container">
                                         <div className="text-md-center">C# for Unity</div>
@@ -131,9 +151,12 @@ class About extends React.Component {
                                                   value={30}>%30</Progress>
                                         <div className="text-md-center">React</div>
                                         <Progress className="about-progress-bar" animated color="info"
-                                                  value={70}>%70</Progress>
+                                                  value={75}>%75</Progress>
                                         <div className="text-md-center">CSS</div>
                                         <Progress className="about-progress-bar" animated color="danger"
+                                                  value={85}>%85</Progress>
+                                        <div className="text-md-center">Database Systems</div>
+                                        <Progress className="about-progress-bar" animated color="success"
                                                   value={85}>%85</Progress>
                                     </div>
                                 </div>

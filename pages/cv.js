@@ -3,6 +3,12 @@ import BaseLayout from "../components/layouts/BaseLayout"
 import BasePage from "../components/layouts/BasePage"
 import {Col, Container, Row} from "reactstrap";
 
+// Import the main component
+import Viewer from '@phuocng/react-pdf-viewer';
+
+// Import the CSS
+import '@phuocng/react-pdf-viewer/cjs/react-pdf-viewer.css';
+
 class CV extends React.Component {
 
 
@@ -17,12 +23,9 @@ class CV extends React.Component {
                     <Container className="cv-page-margin">
                         <Row>
                             <Col>
-                                <img className="cv cv-page" src="../static/images/cv.jpg" width="500" height="648"/>
-                            </Col>
-                            <Col className="hero-welcome-wrapper">
-                                <div className="hero-welcome-text">
-                                    <a className="nav-link white-link" href="../static/files/cv.pdf"><h1 className="cv-download">Click here to download my CV as PDF!</h1></a>
-                                </div>
+                            <div style={{ height: '900px' }}>
+                                <Viewer fileUrl="../static/files/CV.pdf" />
+                            </div>
                             </Col>
                         </Row>
                     </Container>

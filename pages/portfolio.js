@@ -13,11 +13,10 @@ class Portfolio extends React.Component {
     static async getInitialProps() {
         let posts = {};
         try {
-            //const response = await axios.get('https://jsonplaceholder.typicode.com/posts');
             const response = await github.get('/users/alpgokcek/repos');
             posts = response.data;
         } catch (e) {
-            console.log(e);
+            console.log("sad");
         }
         return {posts}
     }

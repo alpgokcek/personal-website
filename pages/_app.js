@@ -3,6 +3,7 @@ import App, {Container} from 'next/app'
 import {Head} from 'next/document'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../styles/styles.scss'
+import { Worker } from '@phuocng/react-pdf-viewer';
 class MyApp extends App {
 
     static async getInitialProps({Component, router, ctx}) {
@@ -18,7 +19,10 @@ class MyApp extends App {
         const {Component, pageProps} = this.props;
         return (
             <div>
-                <Component {...pageProps} />
+                <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.3.200/build/pdf.worker.min.js">
+                    <Component {...pageProps} />
+                </Worker>
+                
             </div>
 
             );
