@@ -2,11 +2,7 @@ import React from 'react';
 import BaseLayout from "../components/layouts/BaseLayout"
 import BasePage from "../components/layouts/BasePage"
 import {Col, Container, Row} from "reactstrap";
-
-// Import the main component
 import Viewer from '@phuocng/react-pdf-viewer';
-
-// Import the CSS
 import '@phuocng/react-pdf-viewer/cjs/react-pdf-viewer.css';
 
 class CV extends React.Component {

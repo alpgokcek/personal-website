@@ -1,6 +1,5 @@
 import React from 'react'
-import App, {Container} from 'next/app'
-import {Head} from 'next/document'
+import App from 'next/app'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../styles/styles.scss'
 import { Worker } from '@phuocng/react-pdf-viewer';

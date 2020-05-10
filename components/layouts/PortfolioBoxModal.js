@@ -1,7 +1,6 @@
 import React from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import moment from 'moment';
-import axios from "axios";
 import github from "../github-auth";
 
 class PortfolioBoxModal extends React.Component {
@@ -51,28 +50,6 @@ class PortfolioBoxModal extends React.Component {
                 </Modal>
             </div>
         );
-
-
-        /*
-        return (
-            <div>
-                <Modal isOpen={isOpen} toggle={toggle}>
-                    <ModalHeader toggle={toggle}>Amk</ModalHeader>
-                    <ModalBody>
-                        <p><b>Description: </b>{this.props.portfolio.description}</p>
-                        <h5>Created: {moment().format("dddd, MMMM Do YYYY")}</h5>
-                        <h5>Last Update: {moment().format("dddd, MMMM Do YYYY")}</h5>
-                        <h5>Language:</h5>
-                    </ModalBody>
-                    <ModalFooter>
-                        <Button color="primary" onClick={toggle}>Check Github</Button>{' '}
-                        <Button color="secondary" onClick={toggle}>Cancel</Button>
-                    </ModalFooter>
-                </Modal>
-            </div>
-        );
-        */
-
     }
 }
 

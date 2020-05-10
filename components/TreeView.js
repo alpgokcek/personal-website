@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import {Button, ListGroup, ListGroupItem, ListGroupItemHeading, ListGroupItemText, Collapse} from 'reactstrap';
+import {Button, ListGroup, ListGroupItem, Collapse} from 'reactstrap';
 
 
 

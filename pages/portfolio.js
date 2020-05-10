@@ -1,7 +1,5 @@
 import React from 'react';
 import BaseLayout from "../components/layouts/BaseLayout"
-import axios from "axios";
-import Link from 'next/link'
 import BasePage from "../components/layouts/BasePage"
 import github from "../components/github-auth"
 import PortfolioBox from "../components/layouts/PortfolioBox";
@@ -16,7 +14,7 @@ class Portfolio extends React.Component {
             const response = await github.get('/users/alpgokcek/repos');
             posts = response.data;
         } catch (e) {
-            console.log("sad");
+            console.log(e);
         }
         return {posts}
     }

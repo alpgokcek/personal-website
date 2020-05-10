@@ -1,9 +1,8 @@
 import React from 'react';
 import BaseLayout from "../components/layouts/BaseLayout"
 import "../styles/styles.scss";
-import {Button, Container, Row, Col} from 'reactstrap';
+import {Container, Row, Col} from 'reactstrap';
 import Typed from 'react-typed';
-import BasePage from "../components/layouts/BasePage"
 
 
 

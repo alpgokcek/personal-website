@@ -1,31 +1,5 @@
-/*
 import React from 'react';
-import Link from "next/link";
-
-class Header extends React.Component{
-    render() {
-        const title = this.props.title;
-        return (
-            <div>
-                <p>{title}</p>
-                <Link href="/"><a>Home </a></Link>
-                <Link href="/about"><a>About </a></Link>
-                <Link href="/blogs"><a>Blogs </a></Link>
-                <Link href="/portfolios"><a>Portfolios </a></Link>
-                <Link href="/cv"><a>CV </a></Link>
-            </div>
-        );
-    }
-}
-
-export default Header;
-*/
-
-import React from 'react';
-import Link from "next/link";
 import Head from 'next/head';
-
-
 import {
     Collapse,
     Navbar,
@@ -33,18 +7,8 @@ import {
     NavbarBrand,
     Nav,
     NavItem,
-    NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem } from 'reactstrap';
-
-    const NavLinkSetup = (props) => {
-        const {route, title} = props;
-        return(
-            <Link href={route}><a className="nav-link port-navbar-link">{title}</a></Link>
-        );
-    };
+    NavLink
+} from 'reactstrap';
 
 export default class Header extends React.Component {
     constructor(props) {
