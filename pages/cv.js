@@ -2,9 +2,6 @@ import React from 'react';
 import BaseLayout from "../components/layouts/BaseLayout"
 import BasePage from "../components/layouts/BasePage"
 import {Col, Container, Row} from "reactstrap";
-import dynamic from 'next/dynamic';
-
-const PDFViewer = dynamic(import('../components/PDFViewer'), { ssr: false });
 class CV extends React.Component {
 
 
