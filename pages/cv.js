@@ -17,7 +17,7 @@ class CV extends React.Component {
                         <Row>
                             <Col>
                             <div style={{ height: '900px' }}>
-                            <iframe style={{ width: '100%', height: "100%" }} src={"http://www.alpgokcek.com/static/files/CV.pdf"}></iframe>
+                            <iframe style={{ width: '100%', height: "100%" }} src={"http://www.alpgokcek.com/static/files/cv.pdf"}></iframe>
                             </div>
                             </Col>
                         </Row>
