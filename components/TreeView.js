@@ -16,7 +16,7 @@ class TreeView extends Component {
             const item = <React.Fragment key={index}>
             <ListGroupItem style={{zIndex: 0}} className={`${parentId ? `rounded-0 ${lvl ? 'border-bottom-0' : ''}` : ''}`}>
                 {<div id={id} onClick={this.toggle} style={{paddingLeft: `${25 * lvl}px`}}>
-                    {node.nodes && <Button className="pl-0" color="link" id={id}>{this.state[id] ? '-' : '+'}</Button>}
+                    {node.nodes && <Button className="pl-0 color-filter" color="link" id={id}>{this.state[id] ? '-' : '+'}</Button>}
                     <span dangerouslySetInnerHTML={{ __html: node.text }}/>
                 </div>}
             </ListGroupItem>

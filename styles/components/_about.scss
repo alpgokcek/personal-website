@@ -16,6 +16,7 @@
 
 .about-progress-bar {
   margin-bottom: 20px;
+  color: black !important;
 }
 
 .skills-container {
@@ -26,4 +27,5 @@
 .skills-wrapper {
   justify-content: space-between;
   display: flex;
+  filter: hue-rotate(64deg);
 }

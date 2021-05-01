@@ -176,6 +176,14 @@ let tree = [
         ]
     },
     {
+        text: "Skills & Interests",
+        nodes: [
+            {
+                text: 'React.js, Next.js, Django, MySQL, PostgreSQL, Node.js, UNIX Based Systems, Git, NLP, Artificial Intelligence, Machine Learning, Deep Learning, Azure, AWS, Blockchain, Google Cloud Platform, Jenkins, Confluence, JIRA, Bitbucket'
+            }
+        ]
+    },
+    {
         text: "Languages",
         nodes: [
             {
@@ -216,39 +224,42 @@ class About extends React.Component {
                     <Container className="about__container">
                         <Row>
                             <Col>
+                                <h3>Programming Languages</h3>
+                                <hr/>
                                 <div className="skills-wrapper">
                                     <div className="skills-container">
                                         <div className="text-md-center">Python</div>
-                                        <Progress className="about-progress-bar" key="python" animated value={90}>%90</Progress>
+                                        <Progress className="about-progress-bar" key="python" value={90}>%90</Progress>
                                         <div className="text-md-center">Java</div>
-                                        <Progress className="about-progress-bar" className="about-progress-bar" animated
-                                                  key="Java" color="danger" value={80}>%80</Progress>
+                                        <Progress className="about-progress-bar" className="about-progress-bar"
+                                                  key="Java" value={80}>%80</Progress>
                                         <div className="text-md-center">C-Programming</div>
-                                        <Progress className="about-progress-bar" key="c" animated color="success"
+                                        <Progress className="about-progress-bar" key="c"
                                                   value={75}>%75</Progress>
                                         <div className="text-md-center">HTML</div>
-                                        <Progress className="about-progress-bar" key="html" animated color="warning"
+                                        <Progress className="about-progress-bar" key="html"
                                                   value={95}>%95</Progress>
-                                        <div className="text-md-center">Node.js</div>
-                                        <Progress className="about-progress-bar" key="node" animated color="info"
-                                                  value={85}>%85</Progress>
+                                        <div className="text-md-center">C# for Unity</div>
+                                        <Progress className="about-progress-bar" key="c#"
+                                                  value={60}>%60</Progress>
                                     </div>
                                     <div className="skills-container">
-                                        <div className="text-md-center">C# for Unity</div>
-                                        <Progress className="about-progress-bar" key="c#" animated color="warning"
-                                                  value={60}>%60</Progress>
-                                        <div className="text-md-center">Bash</div>
-                                        <Progress className="about-progress-bar" key="Bash" animated color="success"
-                                                  value={30}>%30</Progress>
-                                        <div className="text-md-center">React</div>
-                                        <Progress className="about-progress-bar" key="React" animated color="info"
-                                                  value={75}>%75</Progress>
+                                        <div className="text-md-center">JavaScript</div>
+                                        <Progress className="about-progress-bar" key="JavaScript"
+                                                  value={85}>%85</Progress>
+                                        <div className="text-md-center">SQL</div>
+                                        <Progress className="about-progress-bar" key="Database Systems"
+                                                  value={85}>%85</Progress>
+                                        <div className="text-md-center">PHP</div>
+                                        <Progress className="about-progress-bar" key="PHP"
+                                                  value={75}>%65</Progress>
                                         <div className="text-md-center">CSS</div>
-                                        <Progress className="about-progress-bar" key="CSS" animated color="danger"
+                                        <Progress className="about-progress-bar" key="CSS"
                                                   value={85}>%85</Progress>
-                                        <div className="text-md-center">Database Systems</div>
-                                        <Progress className="about-progress-bar" key="Database Systems" animated color="success"
-                                                  value={85}>%85</Progress>
+
+                                        <div className="text-md-center">Linux Shell Scripting</div>
+                                        <Progress className="about-progress-bar" key="Bash"
+                                                  value={30}>%40</Progress>
                                     </div>
                                 </div>
                                 <hr/>
