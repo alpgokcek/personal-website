@@ -257,7 +257,7 @@ class About extends React.Component {
                                         <Progress className="about-progress-bar" key="CSS"
                                                   value={85}>%85</Progress>
 
-                                        <div className="text-md-center">Linux Shell Scripting</div>
+                                        <div className="text-md-center">Shell Scripting</div>
                                         <Progress className="about-progress-bar" key="Bash"
                                                   value={30}>%40</Progress>
                                     </div>
