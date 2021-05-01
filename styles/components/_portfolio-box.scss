@@ -4,35 +4,36 @@
   border-radius: 5px;
   padding: 20px;
   margin: 20px;
-  word-break: break-all;
-  h4{
+  word-break: break-word;
+  h4 {
     text-align: center;
     font-weight: 600;
   }
-  p{
+  p {
     text-align: center;
   }
-  background-color: white;
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+  //background-color: rgba($color: #000000, $alpha: 0.2);
   color: black;
-
 }
-.portfolio-box:hover{
-  cursor:default;
+.portfolio-box:hover {
+  cursor: default;
 }
 
 .portfolio-box:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
 }
 
 .pbox-container {
   padding: 2px 16px;
 }
 
-.text-color-pb{
-  color: black;
+.text-color-pb {
+  color: white;
 }
 
-.pb-margin{
+.pb-margin {
   margin-bottom: 150px;
   @media (max-width: $desktop-breakpoint) {
     margin-left: 10px;
@@ -46,10 +47,10 @@
   display: flex;
   @media (max-width: $desktop-breakpoint) {
     flex-direction: column;
-    div{
+    div {
       width: 100% !important;
-      padding:10px;
-      align-content:center;
+      padding: 10px;
+      align-content: center;
       margin-left: 10px;
       margin-right: 40px;
     }
@@ -59,7 +60,6 @@
 .flexbox-container > div {
   width: 50%;
   padding: 10px;
-
 }
 
 .flexbox-container > div:first-child {

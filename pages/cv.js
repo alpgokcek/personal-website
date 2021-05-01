@@ -2,9 +2,9 @@ import React from 'react';
 import BaseLayout from "../components/layouts/BaseLayout"
 import BasePage from "../components/layouts/BasePage"
 import {Col, Container, Row} from "reactstrap";
-import Viewer from '@phuocng/react-pdf-viewer';
-import '@phuocng/react-pdf-viewer/cjs/react-pdf-viewer.css';
+import dynamic from 'next/dynamic';
 
+const PDFViewer = dynamic(import('../components/PDFViewer'), { ssr: false });
 class CV extends React.Component {
 
 
@@ -20,7 +20,7 @@ class CV extends React.Component {
                         <Row>
                             <Col>
                             <div style={{ height: '900px' }}>
-                                <Viewer fileUrl="../static/files/CV.pdf" />
+                            <iframe style={{ width: '100%', height: "100%" }} src={"http://www.alpgokcek.com/static/files/CV.pdf"}></iframe>
                             </div>
                             </Col>
                         </Row>

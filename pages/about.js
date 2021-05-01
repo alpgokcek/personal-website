@@ -122,7 +122,7 @@ class About extends React.Component {
                     <div className="background-image">
                         <img src="/static/images/background-index.png"/>
                     </div>
-                    <Container>
+                    <Container className="about__container">
                         <Row>
                             <Col>
                                 <div className="skills-wrapper">

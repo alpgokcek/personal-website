@@ -1,19 +1,21 @@
-.cv{
+.cv {
   margin-top: 50px;
-
 }
-.cv-download{
+.cv-download {
   margin-top: 100px;
   text-align: center;
   @media (max-width: $desktop-breakpoint) {
     margin-top: 0px;
   }
 }
-.cv-page{
+.cv-page {
   margin-bottom: 50px;
 }
 
-.cv-page-margin{
+.cv-page-margin {
   margin-top: 30px;
   margin-bottom: 150px;
+  padding: 23px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.25);
 }

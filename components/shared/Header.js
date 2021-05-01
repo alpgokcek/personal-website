@@ -27,13 +27,14 @@ export default class Header extends React.Component {
             isOpen: !this.state.isOpen
         });
     }
+    //className="port-navbar port-nav-base absolute"
     render() {
         return (
             <div>
                 <Head>
                     <title>Alp Gökçek</title>
                 </Head>
-                <Navbar className="port-navbar port-nav-base absolute" color="transparent" dark expand="md">
+                <Navbar className="port-navbar port-nav-base" light expand="lg">
                     <NavbarBrand className="port-navbar-brand" href="/">Alp Gökçek</NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>

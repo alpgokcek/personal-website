@@ -18,12 +18,12 @@ class Homepage extends React.Component {
 
                     <Container className="cv-page-margin">
                         <Row>
-                            <Col md="6">
+                            <Col md="6" className="center-self">
                                 <div className="hero-section">
                                     <div className={`flipper`}>
                                         <div className="back">
                                             <div className="hero-section-content">
-                                                <h2> Computer Engineering Student </h2>
+                                                <h2> Senior Computer Engineering Student </h2>
                                                 <div className="hero-section-content-intro">
                                                     Have a look at my portfolio and job history.
                                                 </div>

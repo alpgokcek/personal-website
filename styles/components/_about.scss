@@ -1,18 +1,29 @@
 .about {
-  margin-top: 50px;
   margin-bottom: 150px;
+
+  color: black;
+  &__container {
+    color: white;
+    margin-top: 20px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.25);
+    @media (max-width: $desktop-breakpoint) {
+      padding: 20px 10px;
+    }
+  }
 }
 
-.about-progress-bar{
+.about-progress-bar {
   margin-bottom: 20px;
 }
 
-.skills-container{
+.skills-container {
   width: 50%;
   height: 75%;
-  margin:10px;
+  margin: 10px;
 }
-.skills-wrapper{
+.skills-wrapper {
   justify-content: space-between;
   display: flex;
 }

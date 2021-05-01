@@ -28,15 +28,15 @@ class Portfolio extends React.Component {
 
     render() {
         const posts = this.props.posts;
-        let i = 0;
         return (
             <BaseLayout>
                 <BasePage className="pb-margin">
-                    <h1>Portfolios</h1>
+                    <h1>Projects on GitHub</h1>
+                    <hr/>
                     <div className="background-image">
                         <img src="/static/images/background-index.png"/>
                     </div>
-                    <Container>
+                    <Container className="cv-page-margin">
                         <Row>
                             <Col>
                                 <div className="flexbox-container">
